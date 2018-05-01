@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 01 May 2018 18:18:52 GMT
+      - Tue, 01 May 2018 19:44:54 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -34,9 +34,9 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"token":"c138d232-3d48-45f8-952c-6760c69d96da","expires_at":"2018-05-01T18:38:53.266Z"}'
+      string: '{"token":"bd9e1110-64fe-494b-8e8e-9c623d25f2dd","expires_at":"2018-05-01T20:04:55.095Z"}'
     http_version: 
-  recorded_at: Tue, 01 May 2018 18:18:53 GMT
+  recorded_at: Tue, 01 May 2018 19:44:54 GMT
 - request:
     method: get
     uri: http://todoable.teachable.tech/api/lists
@@ -49,20 +49,20 @@ http_interactions:
       Content-Type:
       - application/json
       Authorization:
-      - Token token="c138d232-3d48-45f8-952c-6760c69d96da"
+      - Token token="bd9e1110-64fe-494b-8e8e-9c623d25f2dd"
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Tue, 01 May 2018 18:18:52 GMT
+      - Tue, 01 May 2018 19:44:55 GMT
       Connection:
       - keep-alive
       Content-Type:
       - text/html;charset=utf-8
       Content-Length:
-      - '498'
+      - '12'
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
@@ -75,8 +75,7 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"lists":[{"name":"list cf38fa19-427a-4a97-a04a-c6eb54b5a9c4","src":"http://todoable.teachable.tech/api/lists/672221c0-9a9b-4fbb-840f-cd00a075236b","id":"672221c0-9a9b-4fbb-840f-cd00a075236b"},{"name":"Beansauce
-        3","src":"http://todoable.teachable.tech/api/lists/2517ce7a-7474-485e-8f62-f292697987b7","id":"2517ce7a-7474-485e-8f62-f292697987b7"},{"name":"Beansauce","src":"http://todoable.teachable.tech/api/lists/2abe37a8-caef-4536-add6-f911c982d376","id":"2abe37a8-caef-4536-add6-f911c982d376"}]}'
+      string: '{"lists":[]}'
     http_version: 
-  recorded_at: Tue, 01 May 2018 18:18:53 GMT
+  recorded_at: Tue, 01 May 2018 19:44:54 GMT
 recorded_with: VCR 4.0.0

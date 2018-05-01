@@ -19,7 +19,7 @@ http_interactions:
       message: Unauthorized
     headers:
       Date:
-      - Tue, 01 May 2018 19:03:18 GMT
+      - Tue, 01 May 2018 19:44:58 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -42,7 +42,7 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Tue, 01 May 2018 19:03:19 GMT
+  recorded_at: Tue, 01 May 2018 19:44:58 GMT
 - request:
     method: get
     uri: http://todoable.teachable.tech/api/lists
@@ -62,7 +62,7 @@ http_interactions:
       message: Unauthorized
     headers:
       Date:
-      - Tue, 01 May 2018 19:03:19 GMT
+      - Tue, 01 May 2018 19:44:58 GMT
       Connection:
       - keep-alive
       Content-Length:
@@ -77,7 +77,7 @@ http_interactions:
       encoding: UTF-8
       string: Unauthorized
     http_version: 
-  recorded_at: Tue, 01 May 2018 19:03:19 GMT
+  recorded_at: Tue, 01 May 2018 19:44:58 GMT
 - request:
     method: post
     uri: http://todoable.teachable.tech/api/authenticate
@@ -97,7 +97,7 @@ http_interactions:
       message: Unauthorized
     headers:
       Date:
-      - Tue, 01 May 2018 19:03:19 GMT
+      - Tue, 01 May 2018 19:44:58 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -120,7 +120,7 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Tue, 01 May 2018 19:03:19 GMT
+  recorded_at: Tue, 01 May 2018 19:44:58 GMT
 - request:
     method: get
     uri: http://todoable.teachable.tech/api/lists
@@ -140,7 +140,7 @@ http_interactions:
       message: Unauthorized
     headers:
       Date:
-      - Tue, 01 May 2018 19:03:19 GMT
+      - Tue, 01 May 2018 19:44:58 GMT
       Connection:
       - keep-alive
       Content-Length:
@@ -155,5 +155,5 @@ http_interactions:
       encoding: UTF-8
       string: Unauthorized
     http_version: 
-  recorded_at: Tue, 01 May 2018 19:03:19 GMT
+  recorded_at: Tue, 01 May 2018 19:44:58 GMT
 recorded_with: VCR 4.0.0

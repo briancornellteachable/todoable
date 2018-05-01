@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 01 May 2018 18:47:25 GMT
+      - Tue, 01 May 2018 19:44:56 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -34,9 +34,9 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"token":"ec474892-3a2d-4655-aaf1-fd5596aab86c","expires_at":"2018-05-01T19:07:26.723Z"}'
+      string: '{"token":"02b305cf-9324-4f77-938c-4488c52e14cc","expires_at":"2018-05-01T20:04:57.242Z"}'
     http_version: 
-  recorded_at: Tue, 01 May 2018 18:47:26 GMT
+  recorded_at: Tue, 01 May 2018 19:44:56 GMT
 - request:
     method: post
     uri: http://todoable.teachable.tech/api/lists
@@ -49,20 +49,20 @@ http_interactions:
       Content-Type:
       - application/json
       Authorization:
-      - Token token="ec474892-3a2d-4655-aaf1-fd5596aab86c"
+      - Token token="02b305cf-9324-4f77-938c-4488c52e14cc"
   response:
     status:
       code: 201
       message: Created
     headers:
       Date:
-      - Tue, 01 May 2018 18:47:26 GMT
+      - Tue, 01 May 2018 19:44:56 GMT
       Connection:
       - keep-alive
       Content-Type:
       - text/html;charset=utf-8
       Location:
-      - http://todoable.teachable.tech/api/lists/bfb62457-cea1-45b1-90c2-41da934b131b
+      - http://todoable.teachable.tech/api/lists/467edbb2-09a5-4af6-ae07-7f0bff177f84
       Content-Length:
       - '157'
       X-Xss-Protection:
@@ -77,9 +77,9 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"name":"finish item test","src":"http://todoable.teachable.tech/api/lists/bfb62457-cea1-45b1-90c2-41da934b131b","id":"bfb62457-cea1-45b1-90c2-41da934b131b"}'
+      string: '{"name":"finish item test","src":"http://todoable.teachable.tech/api/lists/467edbb2-09a5-4af6-ae07-7f0bff177f84","id":"467edbb2-09a5-4af6-ae07-7f0bff177f84"}'
     http_version: 
-  recorded_at: Tue, 01 May 2018 18:47:26 GMT
+  recorded_at: Tue, 01 May 2018 19:44:56 GMT
 - request:
     method: post
     uri: http://todoable.teachable.tech/api/authenticate
@@ -99,7 +99,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 01 May 2018 18:47:26 GMT
+      - Tue, 01 May 2018 19:44:57 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -114,12 +114,12 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"token":"ecdb879b-1e91-461b-ab1a-06429a13b5aa","expires_at":"2018-05-01T19:07:26.918Z"}'
+      string: '{"token":"a01bfc03-1235-4218-b27f-226f5daaf9f3","expires_at":"2018-05-01T20:04:57.448Z"}'
     http_version: 
-  recorded_at: Tue, 01 May 2018 18:47:26 GMT
+  recorded_at: Tue, 01 May 2018 19:44:56 GMT
 - request:
     method: post
-    uri: http://todoable.teachable.tech/api/lists/bfb62457-cea1-45b1-90c2-41da934b131b/items
+    uri: http://todoable.teachable.tech/api/lists/467edbb2-09a5-4af6-ae07-7f0bff177f84/items
     body:
       encoding: UTF-8
       string: '{"item":{"name":"added item"}}'
@@ -129,20 +129,20 @@ http_interactions:
       Content-Type:
       - application/json
       Authorization:
-      - Token token="ecdb879b-1e91-461b-ab1a-06429a13b5aa"
+      - Token token="a01bfc03-1235-4218-b27f-226f5daaf9f3"
   response:
     status:
       code: 201
       message: Created
     headers:
       Date:
-      - Tue, 01 May 2018 18:47:26 GMT
+      - Tue, 01 May 2018 19:44:56 GMT
       Connection:
       - keep-alive
       Content-Type:
       - text/html;charset=utf-8
       Location:
-      - http://todoable.teachable.tech/api/lists/bfb62457-cea1-45b1-90c2-41da934b131b/items/e1dc92be-279c-4aed-892e-4059b6c028d7
+      - http://todoable.teachable.tech/api/lists/467edbb2-09a5-4af6-ae07-7f0bff177f84/items/66dda884-dc93-4ce0-9ad0-9df743b9cc86
       Content-Length:
       - '213'
       X-Xss-Protection:
@@ -157,9 +157,9 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"name":"added item","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/bfb62457-cea1-45b1-90c2-41da934b131b/items/e1dc92be-279c-4aed-892e-4059b6c028d7","id":"e1dc92be-279c-4aed-892e-4059b6c028d7"}'
+      string: '{"name":"added item","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/467edbb2-09a5-4af6-ae07-7f0bff177f84/items/66dda884-dc93-4ce0-9ad0-9df743b9cc86","id":"66dda884-dc93-4ce0-9ad0-9df743b9cc86"}'
     http_version: 
-  recorded_at: Tue, 01 May 2018 18:47:27 GMT
+  recorded_at: Tue, 01 May 2018 19:44:56 GMT
 - request:
     method: post
     uri: http://todoable.teachable.tech/api/authenticate
@@ -179,7 +179,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 01 May 2018 18:47:26 GMT
+      - Tue, 01 May 2018 19:44:57 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -194,12 +194,12 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"token":"3931a539-d095-43fa-b742-8cd6949a72bf","expires_at":"2018-05-01T19:07:27.118Z"}'
+      string: '{"token":"87ee8ee8-1b94-4ec3-a7f6-51681c60f2dd","expires_at":"2018-05-01T20:04:57.651Z"}'
     http_version: 
-  recorded_at: Tue, 01 May 2018 18:47:27 GMT
+  recorded_at: Tue, 01 May 2018 19:44:57 GMT
 - request:
     method: put
-    uri: http://todoable.teachable.tech/api/lists/bfb62457-cea1-45b1-90c2-41da934b131b/items/e1dc92be-279c-4aed-892e-4059b6c028d7/finish
+    uri: http://todoable.teachable.tech/api/lists/467edbb2-09a5-4af6-ae07-7f0bff177f84/items/66dda884-dc93-4ce0-9ad0-9df743b9cc86/finish
     body:
       encoding: UTF-8
       string: ''
@@ -209,14 +209,14 @@ http_interactions:
       Content-Type:
       - application/json
       Authorization:
-      - Token token="3931a539-d095-43fa-b742-8cd6949a72bf"
+      - Token token="87ee8ee8-1b94-4ec3-a7f6-51681c60f2dd"
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Tue, 01 May 2018 18:47:26 GMT
+      - Tue, 01 May 2018 19:44:57 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -237,5 +237,5 @@ http_interactions:
       encoding: UTF-8
       string: added item finished
     http_version: 
-  recorded_at: Tue, 01 May 2018 18:47:27 GMT
+  recorded_at: Tue, 01 May 2018 19:44:57 GMT
 recorded_with: VCR 4.0.0

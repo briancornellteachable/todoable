@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 01 May 2018 18:24:15 GMT
+      - Tue, 01 May 2018 19:44:54 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -34,9 +34,9 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"token":"1b53ba24-5ff9-4256-97b0-800b7eb891af","expires_at":"2018-05-01T18:44:15.306Z"}'
+      string: '{"token":"6d5bff7b-323d-44a1-a377-7506d585ef16","expires_at":"2018-05-01T20:04:55.525Z"}'
     http_version: 
-  recorded_at: Tue, 01 May 2018 18:24:15 GMT
+  recorded_at: Tue, 01 May 2018 19:44:54 GMT
 - request:
     method: post
     uri: http://todoable.teachable.tech/api/lists
@@ -49,20 +49,20 @@ http_interactions:
       Content-Type:
       - application/json
       Authorization:
-      - Token token="1b53ba24-5ff9-4256-97b0-800b7eb891af"
+      - Token token="6d5bff7b-323d-44a1-a377-7506d585ef16"
   response:
     status:
       code: 201
       message: Created
     headers:
       Date:
-      - Tue, 01 May 2018 18:24:15 GMT
+      - Tue, 01 May 2018 19:44:55 GMT
       Connection:
       - keep-alive
       Content-Type:
       - text/html;charset=utf-8
       Location:
-      - http://todoable.teachable.tech/api/lists/241f66d0-a4aa-49ed-9cd8-c463593f024b
+      - http://todoable.teachable.tech/api/lists/464cf3c9-cf36-4b1a-8400-7ebc9c3d6894
       Content-Length:
       - '155'
       X-Xss-Protection:
@@ -77,9 +77,9 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"name":"list info test","src":"http://todoable.teachable.tech/api/lists/241f66d0-a4aa-49ed-9cd8-c463593f024b","id":"241f66d0-a4aa-49ed-9cd8-c463593f024b"}'
+      string: '{"name":"list info test","src":"http://todoable.teachable.tech/api/lists/464cf3c9-cf36-4b1a-8400-7ebc9c3d6894","id":"464cf3c9-cf36-4b1a-8400-7ebc9c3d6894"}'
     http_version: 
-  recorded_at: Tue, 01 May 2018 18:24:15 GMT
+  recorded_at: Tue, 01 May 2018 19:44:55 GMT
 - request:
     method: post
     uri: http://todoable.teachable.tech/api/authenticate
@@ -99,7 +99,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 01 May 2018 18:24:14 GMT
+      - Tue, 01 May 2018 19:44:55 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -114,12 +114,12 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"token":"9ff3c18e-a856-43b4-b6c0-e606da6d5625","expires_at":"2018-05-01T18:44:15.500Z"}'
+      string: '{"token":"bb88de21-f03a-4075-afd6-f3d0232c45c2","expires_at":"2018-05-01T20:04:55.714Z"}'
     http_version: 
-  recorded_at: Tue, 01 May 2018 18:24:15 GMT
+  recorded_at: Tue, 01 May 2018 19:44:55 GMT
 - request:
     method: get
-    uri: http://todoable.teachable.tech/api/lists/241f66d0-a4aa-49ed-9cd8-c463593f024b
+    uri: http://todoable.teachable.tech/api/lists/464cf3c9-cf36-4b1a-8400-7ebc9c3d6894
     body:
       encoding: US-ASCII
       string: ''
@@ -129,14 +129,14 @@ http_interactions:
       Content-Type:
       - application/json
       Authorization:
-      - Token token="9ff3c18e-a856-43b4-b6c0-e606da6d5625"
+      - Token token="bb88de21-f03a-4075-afd6-f3d0232c45c2"
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Tue, 01 May 2018 18:24:15 GMT
+      - Tue, 01 May 2018 19:44:55 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -157,5 +157,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"name":"list info test","items":[]}'
     http_version: 
-  recorded_at: Tue, 01 May 2018 18:24:15 GMT
+  recorded_at: Tue, 01 May 2018 19:44:55 GMT
 recorded_with: VCR 4.0.0
