@@ -1,0 +1,161 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/authenticate
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <ENCODED AUTH HEADER>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 01 May 2018 18:34:40 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '88'
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"token":"edefe0a9-9d4c-4378-b38f-9aba33d5da39","expires_at":"2018-05-01T18:54:40.645Z"}'
+    http_version: 
+  recorded_at: Tue, 01 May 2018 18:34:40 GMT
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/lists
+    body:
+      encoding: UTF-8
+      string: '{"list":{"name":"update list test"}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="edefe0a9-9d4c-4378-b38f-9aba33d5da39"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Tue, 01 May 2018 18:34:40 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html;charset=utf-8
+      Location:
+      - http://todoable.teachable.tech/api/lists/610fee66-de5c-4321-ad55-6aa0d92b0dad
+      Content-Length:
+      - '157'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"name":"update list test","src":"http://todoable.teachable.tech/api/lists/610fee66-de5c-4321-ad55-6aa0d92b0dad","id":"610fee66-de5c-4321-ad55-6aa0d92b0dad"}'
+    http_version: 
+  recorded_at: Tue, 01 May 2018 18:34:41 GMT
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/authenticate
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <ENCODED AUTH HEADER>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 01 May 2018 18:34:40 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '88'
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"token":"fe903c3b-32d5-42f7-91c1-c1ac3a23597e","expires_at":"2018-05-01T18:54:41.114Z"}'
+    http_version: 
+  recorded_at: Tue, 01 May 2018 18:34:41 GMT
+- request:
+    method: patch
+    uri: http://todoable.teachable.tech/api/lists/610fee66-de5c-4321-ad55-6aa0d92b0dad
+    body:
+      encoding: UTF-8
+      string: '{"list":{"name":"updated_name"}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="fe903c3b-32d5-42f7-91c1-c1ac3a23597e"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 01 May 2018 18:34:41 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '20'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: updated_name updated
+    http_version: 
+  recorded_at: Tue, 01 May 2018 18:34:41 GMT
+recorded_with: VCR 4.0.0

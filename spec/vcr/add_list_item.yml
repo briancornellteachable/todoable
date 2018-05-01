@@ -1,0 +1,163 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/authenticate
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <ENCODED AUTH HEADER>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 01 May 2018 18:42:04 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '88'
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"token":"6224ec06-23fd-4305-a9c0-14a7bcd26fee","expires_at":"2018-05-01T19:02:04.645Z"}'
+    http_version: 
+  recorded_at: Tue, 01 May 2018 18:42:04 GMT
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/lists
+    body:
+      encoding: UTF-8
+      string: '{"list":{"name":"add item test"}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="6224ec06-23fd-4305-a9c0-14a7bcd26fee"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Tue, 01 May 2018 18:42:03 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html;charset=utf-8
+      Location:
+      - http://todoable.teachable.tech/api/lists/874ec797-9b3d-4bfb-ab43-3512a1365b04
+      Content-Length:
+      - '154'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"name":"add item test","src":"http://todoable.teachable.tech/api/lists/874ec797-9b3d-4bfb-ab43-3512a1365b04","id":"874ec797-9b3d-4bfb-ab43-3512a1365b04"}'
+    http_version: 
+  recorded_at: Tue, 01 May 2018 18:42:04 GMT
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/authenticate
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <ENCODED AUTH HEADER>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 01 May 2018 18:42:04 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '88'
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"token":"44116e37-8a0f-467b-969e-ac03dca4920f","expires_at":"2018-05-01T19:02:04.831Z"}'
+    http_version: 
+  recorded_at: Tue, 01 May 2018 18:42:04 GMT
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/lists/874ec797-9b3d-4bfb-ab43-3512a1365b04/items
+    body:
+      encoding: UTF-8
+      string: '{"item":{"name":"added item"}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="44116e37-8a0f-467b-969e-ac03dca4920f"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Tue, 01 May 2018 18:42:04 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html;charset=utf-8
+      Location:
+      - http://todoable.teachable.tech/api/lists/874ec797-9b3d-4bfb-ab43-3512a1365b04/items/3c17d807-a7ab-4a3b-8477-acbc83700759
+      Content-Length:
+      - '213'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"name":"added item","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/874ec797-9b3d-4bfb-ab43-3512a1365b04/items/3c17d807-a7ab-4a3b-8477-acbc83700759","id":"3c17d807-a7ab-4a3b-8477-acbc83700759"}'
+    http_version: 
+  recorded_at: Tue, 01 May 2018 18:42:04 GMT
+recorded_with: VCR 4.0.0

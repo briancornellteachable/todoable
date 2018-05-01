@@ -1,0 +1,241 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/authenticate
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <ENCODED AUTH HEADER>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 01 May 2018 18:47:25 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '88'
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"token":"ec474892-3a2d-4655-aaf1-fd5596aab86c","expires_at":"2018-05-01T19:07:26.723Z"}'
+    http_version: 
+  recorded_at: Tue, 01 May 2018 18:47:26 GMT
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/lists
+    body:
+      encoding: UTF-8
+      string: '{"list":{"name":"finish item test"}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="ec474892-3a2d-4655-aaf1-fd5596aab86c"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Tue, 01 May 2018 18:47:26 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html;charset=utf-8
+      Location:
+      - http://todoable.teachable.tech/api/lists/bfb62457-cea1-45b1-90c2-41da934b131b
+      Content-Length:
+      - '157'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"name":"finish item test","src":"http://todoable.teachable.tech/api/lists/bfb62457-cea1-45b1-90c2-41da934b131b","id":"bfb62457-cea1-45b1-90c2-41da934b131b"}'
+    http_version: 
+  recorded_at: Tue, 01 May 2018 18:47:26 GMT
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/authenticate
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <ENCODED AUTH HEADER>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 01 May 2018 18:47:26 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '88'
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"token":"ecdb879b-1e91-461b-ab1a-06429a13b5aa","expires_at":"2018-05-01T19:07:26.918Z"}'
+    http_version: 
+  recorded_at: Tue, 01 May 2018 18:47:26 GMT
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/lists/bfb62457-cea1-45b1-90c2-41da934b131b/items
+    body:
+      encoding: UTF-8
+      string: '{"item":{"name":"added item"}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="ecdb879b-1e91-461b-ab1a-06429a13b5aa"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Tue, 01 May 2018 18:47:26 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html;charset=utf-8
+      Location:
+      - http://todoable.teachable.tech/api/lists/bfb62457-cea1-45b1-90c2-41da934b131b/items/e1dc92be-279c-4aed-892e-4059b6c028d7
+      Content-Length:
+      - '213'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"name":"added item","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/bfb62457-cea1-45b1-90c2-41da934b131b/items/e1dc92be-279c-4aed-892e-4059b6c028d7","id":"e1dc92be-279c-4aed-892e-4059b6c028d7"}'
+    http_version: 
+  recorded_at: Tue, 01 May 2018 18:47:27 GMT
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/authenticate
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <ENCODED AUTH HEADER>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 01 May 2018 18:47:26 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '88'
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"token":"3931a539-d095-43fa-b742-8cd6949a72bf","expires_at":"2018-05-01T19:07:27.118Z"}'
+    http_version: 
+  recorded_at: Tue, 01 May 2018 18:47:27 GMT
+- request:
+    method: put
+    uri: http://todoable.teachable.tech/api/lists/bfb62457-cea1-45b1-90c2-41da934b131b/items/e1dc92be-279c-4aed-892e-4059b6c028d7/finish
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="3931a539-d095-43fa-b742-8cd6949a72bf"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 01 May 2018 18:47:26 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '19'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: added item finished
+    http_version: 
+  recorded_at: Tue, 01 May 2018 18:47:27 GMT
+recorded_with: VCR 4.0.0

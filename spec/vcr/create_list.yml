@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/authenticate
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <ENCODED AUTH HEADER>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 01 May 2018 18:19:17 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '88'
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"token":"30bf541d-d3fc-4df8-8624-4c9d69c188b7","expires_at":"2018-05-01T18:39:18.116Z"}'
+    http_version: 
+  recorded_at: Tue, 01 May 2018 18:19:18 GMT
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/lists
+    body:
+      encoding: UTF-8
+      string: '{"list":{"name":"created list test"}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="30bf541d-d3fc-4df8-8624-4c9d69c188b7"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Tue, 01 May 2018 18:19:17 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html;charset=utf-8
+      Location:
+      - http://todoable.teachable.tech/api/lists/52529853-55b9-4c2a-86e4-926f8d13cadf
+      Content-Length:
+      - '158'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"name":"created list test","src":"http://todoable.teachable.tech/api/lists/52529853-55b9-4c2a-86e4-926f8d13cadf","id":"52529853-55b9-4c2a-86e4-926f8d13cadf"}'
+    http_version: 
+  recorded_at: Tue, 01 May 2018 18:19:18 GMT
+recorded_with: VCR 4.0.0
